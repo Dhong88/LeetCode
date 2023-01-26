@@ -12,7 +12,7 @@ public class TwoSum {
 
         Map<Integer, Integer> components = new HashMap<>();
         for(int i = 0; i < nums.length; i++) {
-            int ans = target - nums[i];
+            int ans = target - nums[i];  // answer push as key and position as value
             if(!components.containsKey(nums[i]))
                 components.put(ans, i);
             else
